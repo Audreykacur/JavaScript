@@ -369,10 +369,7 @@ if (age === 18) console.log("You just became and adult");
 // this gives a prompt window for a user to enter a value
 prompt("whats your favorite number?")
 
-
 console.log("  ");
-
-
 
 console.log("Equality Operators: == vs. === assignment");
 console.log("  ");
