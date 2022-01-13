@@ -122,7 +122,7 @@ console.log("  ");
 /*
 //     Coding Challenge #1
 //     Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula
-// const BMI = mass / height ** 2 //= mass / (height * height) 
+// const BMI = mass / height ** 2 //= mass / (height * height)
 //     (mass in kg and height in meter).
 
 //     Your tasks:
@@ -162,18 +162,18 @@ const birthYear = 2001;
 const currentYear = 2022;
 const audrey = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' year old ' + job + ".";
 console.log(audrey);
-// type coersion - java script will convert the number into a string so it can concatinate with the rest of the strings 
+// type coersion - java script will convert the number into a string so it can concatinate with the rest of the strings
 //Template literals - can assemble multiple peices into one final string (use backticks to tell javascript that you are doing a template literals)
 const audreynew = `I'm ${firstName}, a ${currentYear - birthYear} year old ${job}.`;
 console.log(audreynew);
-//you can use backticks to write all strings it does not need to have ${} in it 
+//you can use backticks to write all strings it does not need to have ${} in it
 console.log(`This is a string with use of backticks`);
-//template literals for multiline stings 
-console.log(' String \n\ with \n\ multiple \n\ lines'); //only works becasue there is an error in the code 
+//template literals for multiline stings
+console.log(' String \n\ with \n\ multiple \n\ lines'); //only works becasue there is an error in the code
 //just press enter to create a new line
 console.log(`String
-with 
-multiple 
+with
+multiple
 lines using backtiks(template literals)`);
 console.log("  ");
 */
@@ -198,9 +198,9 @@ console.log("  ");
 */
 /*
 console.log("Taking decisions: if/else statement lecture");
-//write a program that checks weather a person is allowed to start getting a drivers license or not and if they are it will print it to the console and if not it will print how many more years they have to go 
+//write a program that checks weather a person is allowed to start getting a drivers license or not and if they are it will print it to the console and if not it will print how many more years they have to go
 const age = 12;
-const isOldEnough = age >= 18; //if the age is 18 or above this boolean will be true 
+const isOldEnough = age >= 18; //if the age is 18 or above this boolean will be true
 
 //an if else control structure - have more control over how the code works
 if (isOldEnough) {
@@ -295,10 +295,10 @@ const inputYear = `1991`;
 //to convert a string to a number use the number function
 console.log(Number(inputYear)); //the original value is not converted
 console.log(Number(inputYear) + 18);
-console.log(Number("audrey")); //will print NaN - not a number --> an invalid number 
+console.log(Number("audrey")); //will print NaN - not a number --> an invalid number
 console.log(String(23));
 //Type Coercion
-//when an operator is dealing with two values of different types it convers one of the valuse to match the other value --> it turns numbers into strings when putting them into a sentence 
+//when an operator is dealing with two values of different types it convers one of the valuse to match the other value --> it turns numbers into strings when putting them into a sentence
 console.log('23' - '10' - 3); //this changes the values to numbers because its subtraction
 let n = '1' + 1; //n = '11'
 n = n - 1; //n = '11' - 1 = 10
@@ -327,7 +327,7 @@ console.log("Truthy and Falsy Values lecture");
 console.log(Boolean(0)); //false
 console.log(Boolean(undefined)); //false
 console.log(Boolean("Audrey")); //true becasue it is not empty
-console.log(Boolean({})); //an empty object and it is true because it is not a falsy 
+console.log(Boolean({})); //an empty object and it is true because it is not a falsy
 
 const money = 0;
 if (money) //--> the statement after the if statement should be a boolean value so it converts it and its a falsy becasue rn money is 0
@@ -339,7 +339,7 @@ else {
 }
 
 
-//check to see is a variable exsists or not 
+//check to see is a variable exsists or not
 let height; //an undefined value is a falsey value and goes to else
 if (height) {
     console.log(`it is defined`);
@@ -352,16 +352,11 @@ console.log("  ");
 console.log("Truthy and Falsy Values assignment");
 console.log("  ");
 */
-
-
-
-
-
-
+/*
 console.log("Equality Operators: == vs. === lecture");
 const age = 18;
 if (age === 18) console.log("You just became and adult");
-// === returns a boolean value but only is true if both sides are exactly the same if one is a number and one is a string it will return false 
+// === returns a boolean value but only is true if both sides are exactly the same if one is a number and one is a string it will return false
 //loosely equal --> double equal will return as true if it is 18 and '18' it does type coercion
 
 //for clean code try to only use the strict equality operator
@@ -373,3 +368,116 @@ console.log("  ");
 
 console.log("Equality Operators: == vs. === assignment");
 console.log("  ");
+*/
+/*
+//coding challenge #3
+
+//two teams Dolphins and koalas
+//compete three times and the highest score wins
+
+// Calculate the average score for each team, using the test data below
+
+// Compare the team's average scores to determine the winner ofthe competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score)
+
+// Bonus 1: Include a requirement for a minimum score of 100.With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points.Hint: Use a logical operator to test for minimum score, as well as multiple else -if blocks 😉
+
+// Bonus 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points.Otherwise, no team wins the trophy
+
+const DolphinScore1 = 97;   //96;
+const DolphinScore2 = 112;  //108;
+const DolphinScore3 = 101;  //89;
+
+const DolphinAvg = (DolphinScore1 + DolphinScore2 + DolphinScore3) / 3;
+
+const KoalaScore1 = 109;    //88;
+const KoalaScore2 = 95;     //91;
+const KoalaScore3 = 106;    //110;
+
+const KoalaAvg = (KoalaScore1 + KoalaScore2 + KoalaScore3) / 3;
+
+let winner;
+
+if ((DolphinAvg > KoalaAvg) && (DolphinAvg > 100)) console.log("The Dolphins win")
+else if ((DolphinAvg < KoalaAvg) && (KoalaAvg > 100)) console.log("The Koalas win")
+else if ((DolphinAvg === KoalaAvg) && (DolphinAvg > 100)) console.log("Their is a tie");
+else console.log("The average is under 100");
+*/
+
+/*
+console.log("Switch statement lecture");
+const day = 'friday';
+switch (day) {
+    case 'monday':
+        console.log("I have an 8am class");
+        console.log("Have a great day");
+        break;
+    case 'tuesday':
+        console.log("I have an 8am class");
+    case 'wednesday':
+        break;
+    case 'thursday':
+        console.log("I have an 9am class");
+        break;
+    case 'friday':
+        console.log("I have an 8am class");
+        break;
+    case 'saturday':
+        console.log("I go to work and run errands");
+        break;
+    case 'sunday':
+        console.log("I get to sleep in ");
+        break;
+    default:
+        console.log("not a valid day");
+}
+console.log("  ");
+console.log("Switch statement assignment");
+console.log("  ");
+*/
+/*
+const age = 24;
+console.log("Conditional Operator (Ternary) lecture");
+console.log("  ");
+age >= 18 ? console.log("I like to drink wine") : console.log("I like to drink water")
+
+const drink = age >= 18 ? "wine" : "water"; //one line if else statement
+//is the age above 18?
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+
+
+
+console.log("Conditional Operator (Ternary) assignment");
+console.log("  ");
+*/
+
+//coding challenge 4
+
+// Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+// Your tasks:
+// 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+
+// 2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 316.25”
+
+// Test data:
+// § Data 1: Test for bill values 275, 40 and 430 Hints:
+// § To calculate 20% of a value, simply multiply it by 20/100 = 0.2 § Value X is between 50 and 300, if it's>= 50 && <= 300😉
+
+const billValue1 = 430;
+const billValue2 = 40;
+const billValue3 = 430;
+const tip = billValue1 <= 300 && billValue1 >= 50 ? billValue1 * .15 : billValue1 * .20;
+//const cost = ((billValue1 > 300) && (billValue1 < 50)) ? (billValue1 * (15/100)) : (billValue1 * (20/100))
+console.log(`The bill value is ${billValue1}
+The tip value is: ${tip}
+The total cost will be ${billValue1 + tip}`)
+
+
+
+
+
+
+
+
+
