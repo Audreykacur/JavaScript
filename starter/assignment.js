@@ -349,8 +349,7 @@ else {
 }
 
 console.log("  ");
-console.log("Truthy and Falsy Values assignment");
-console.log("  ");
+
 */
 /*
 console.log("Equality Operators: == vs. === lecture");
@@ -367,6 +366,35 @@ prompt("whats your favorite number?")
 console.log("  ");
 
 console.log("Equality Operators: == vs. === assignment");
+console.log("  ");
+const numNeighbours = prompt("How many neighbour countried does your county have?");
+
+
+if (Number(numNeighbours === 1)) console.log("Only 1 border!")
+else if (Number(numNeighbours > 1)) console.log("More than 1 border");
+else console.log("No borders")
+
+//you should use the === because its a safer practice of coding and if you type converse then it will allow the user to enter the number and get the sucessful output because when a user enters anything it is a string and srting will not work with strict equality when compared to a number
+
+
+
+
+
+*/
+
+//logical operators assignment
+/*
+const country = "United States";
+const continent = "North America";
+let population = 329500000;
+let isIsland = false; //boolean datatype
+let language; //undefined datatype
+language = "English";
+const finlandPop = 6000000;
+let averagepop = 33000000;
+console.log("  ");
+if (language === "English" && population < 500000 && !isIsland) console.log(`You should live in ${country}`)
+else console.log(`You should not live in ${country}`)
 console.log("  ");
 */
 /*
@@ -431,9 +459,33 @@ switch (day) {
         console.log("not a valid day");
 }
 console.log("  ");
+
+
 console.log("Switch statement assignment");
-console.log("  ");
+const language = "mandarin"
+switch (language) {
+    case 'mandarin':
+    case 'chinese':
+        console.log("MOST number of native speakers")
+        break;
+    case "spanish":
+        console.log("2rd place");
+        break;
+    case "english":
+        console.log("3rd place");
+        break;
+    case "hindi":
+        console.log("Number 4");
+        break;
+    case "arabic":
+        console.log("5th most spoken language");
+        break;
+    default:
+        console.log("Great language");
+}
+
 */
+
 /*
 const age = 24;
 console.log("Conditional Operator (Ternary) lecture");
@@ -450,8 +502,29 @@ console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
 
 console.log("Conditional Operator (Ternary) assignment");
 console.log("  ");
+const country = "United States";
+const continent = "North America";
+let population = 329500000;
+let isIsland = false; //boolean datatype
+let language; //undefined datatype
+language = "English";
+const finlandPop = 6000000;
+let averagepop = 33000000;
+console.log("  ");
+
+const findings = population > averagepop ? "above" : "below";
+console.log(`${country}'s population is ${findings} average`)
+
+//or 
+
+console.log(`${country}'s population is ${population > 33000000 ? 'above' : 'below'} average`)
 */
 
+
+
+
+
+/*
 //coding challenge 4
 
 // Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
@@ -473,7 +546,7 @@ console.log(`The bill value is ${billValue1}
 The tip value is: ${tip}
 The total cost will be ${billValue1 + tip}`)
 
-
+*/
 
 
 
